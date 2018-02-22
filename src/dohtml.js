@@ -46,7 +46,7 @@ const dom = {
         if (!this.isValidNode(target))
             throw new Error('Require a valid HTML Element');
 
-        els.forEach((el) => {
+        els.forEach(function (el) {
             target.appendChild(el);
         });
     }
