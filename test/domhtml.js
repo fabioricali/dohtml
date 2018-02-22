@@ -28,4 +28,12 @@ describe('dom', function () {
             }
         });
     });
+
+    describe('render', function () {
+        it('should not be null', function () {
+            let result = dom.create('<div id="test"></div>');
+            dom.render(result, dom.create('<b></b>'));
+            be.err.not.null(result.querySelector('b'));
+        });
+    });
 });
