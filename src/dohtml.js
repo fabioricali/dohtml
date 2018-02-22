@@ -1,5 +1,5 @@
-function toArray(value, checkNull = true) {
-    if ((checkNull && value === null) || value === undefined)
+function toArray(value) {
+    if (value === null || value === undefined)
         return [];
     else
         return Array.isArray(value)
