@@ -19,7 +19,6 @@ const dom = require('dohtml');
 const myElement = dom.create('<my-component></my-component>');
 
 console.log(myElement);
-});
 
 ```
 
