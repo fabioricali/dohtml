@@ -19,7 +19,6 @@ const dom = require('dohtml');
 const myElement = dom.create('<my-component></my-component>');
 
 console.log(myElement);
-});
 
 ```
 
@@ -35,7 +34,7 @@ dohtml
 * [dom](#dom) : <code>Object</code>
     * [.create(str)](#dom.create) ⇒ <code>Element</code> \| <code>Node</code> \| <code>null</code>
     * [.isValidNode(el)](#dom.isValidNode) ⇒ <code>boolean</code>
-    * [.render(target, els)](#dom.render)
+    * [.render(target, els)](#dom.render) ⇒ <code>Element</code> \| <code>Node</code> \| <code>Error</code>
 
 <a name="dom.create"></a>
 
@@ -75,7 +74,7 @@ Check if is a valid Node
 
 <a name="dom.render"></a>
 
-### dom.render(target, els)
+### dom.render(target, els) ⇒ <code>Element</code> \| <code>Node</code> \| <code>Error</code>
 Append multiple elements into target element
 
 **Kind**: static method of [<code>dom</code>](#dom)  
@@ -89,7 +88,7 @@ Append multiple elements into target element
 <tr>
     <td>target</td><td><code>Element</code></td>
     </tr><tr>
-    <td>els</td><td><code>Array</code> | <code>String</code></td>
+    <td>els</td><td><code>Array</code> | <code>Element</code></td>
     </tr>  </tbody>
 </table>
 
