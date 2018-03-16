@@ -39,7 +39,8 @@ const dom = {
     /**
      * Append multiple elements into target element
      * @param {Element} target
-     * @param {Array|String} els
+     * @param {Array|Element} els
+     * @returns {Element | Node | Error}
      */
     render: function (target, els) {
         els = toArray(els);
@@ -49,6 +50,8 @@ const dom = {
         els.forEach(function (el) {
             target.appendChild(el);
         });
+
+        return target;
     }
 };
 
