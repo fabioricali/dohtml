@@ -29,7 +29,7 @@ console.log(myElement);
 ## dom : <code>Object</code>
 dohtml
 
-**Kind**: global constant  
+**Kind**: global variable  
 
 * [dom](#dom) : <code>Object</code>
     * [.create(str)](#dom.create) ⇒ <code>Element</code> \| <code>Node</code> \| <code>null</code>
