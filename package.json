@@ -1,6 +1,6 @@
 {
   "name": "dohtml",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Simple utility to create HTML element by a string",
   "main": "index.js",
   "scripts": {
