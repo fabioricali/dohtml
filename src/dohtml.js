@@ -11,7 +11,7 @@ function toArray(value) {
  * dohtml
  * @type {{create: dom.create, isValidNode: dom.isValidNode, render: dom.render}}
  */
-const dom = {
+var dom = {
     /**
      * Create DOM element
      * @param str
