@@ -18,10 +18,10 @@ var dom = {
      * @returns {Element | Node | null}
      */
     create: function (str) {
-        let template = document.createElement('div');
+        var template = document.createElement('div');
         str = str.trim();
         template.innerHTML = str;
-        let element = template.firstChild;
+        var element = template.firstChild;
         if (!this.isValidNode(element))
             throw new Error('Element not valid');
         return template.firstChild;
