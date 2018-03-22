@@ -33,7 +33,7 @@ dohtml
 
 * [dom](#dom) : <code>Object</code>
     * [.create(str)](#dom.create) ⇒ <code>Element</code> \| <code>Node</code> \| <code>null</code>
-    * [.isValidNode(el)](#dom.isValidNode) ⇒ <code>boolean</code>
+    * [.isValidNode(el)](#dom.isValidNode) ⇒ <code>Boolean</code>
     * [.render(target, els)](#dom.render) ⇒ <code>Element</code> \| <code>Node</code> \| <code>Error</code>
 
 <a name="dom.create"></a>
@@ -56,7 +56,7 @@ Create DOM element
 
 <a name="dom.isValidNode"></a>
 
-### dom.isValidNode(el) ⇒ <code>boolean</code>
+### dom.isValidNode(el) ⇒ <code>Boolean</code>
 Check if is a valid Node
 
 **Kind**: static method of [<code>dom</code>](#dom)  
