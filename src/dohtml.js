@@ -24,7 +24,7 @@ var dom = {
         var element = template.firstChild;
         if (!this.isValidNode(element))
             throw new Error('Element not valid');
-        return template.firstChild;
+        return element;
     },
 
     /**
