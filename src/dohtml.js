@@ -30,7 +30,7 @@ var dom = {
     /**
      * Check if is a valid Node
      * @param {*} el
-     * @returns {boolean}
+     * @returns {Boolean}
      */
     isValidNode: function (el) {
         return el && 'nodeType' in el;
@@ -39,7 +39,7 @@ var dom = {
     /**
      * Append multiple elements into target element
      * @param {Element} target
-     * @param {Array|Element} els
+     * @param {Array | Element} els
      * @returns {Element | Node | Error}
      */
     render: function (target, els) {
@@ -50,7 +50,6 @@ var dom = {
         els.forEach(function (el) {
             target.appendChild(el);
         });
-
         return target;
     }
 };
