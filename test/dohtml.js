@@ -3,6 +3,8 @@ const dom = require('../');
 
 describe('dom', function () {
 
+    this.timeout(5000);
+
     before(function () {
         this.jsdom = require('jsdom-global')()
     });
