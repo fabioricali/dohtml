@@ -45,12 +45,13 @@ Create DOM element
 <table>
   <thead>
     <tr>
-      <th>Param</th>
+      <th>Param</th><th>Description</th>
     </tr>
   </thead>
   <tbody>
 <tr>
-    <td>str</td>
+    <td>str</td><td><p>html string or a single tag</p>
+</td>
     </tr>  </tbody>
 </table>
 
