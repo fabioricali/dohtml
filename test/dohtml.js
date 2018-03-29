@@ -29,6 +29,14 @@ describe('dom', function () {
                 done();
             }
         });
+        it('should be ok, only tag name', function (done) {
+            try {
+                dom.create('div');
+                done();
+            } catch (e) {
+                done(e);
+            }
+        });
     });
 
     describe('render', function () {

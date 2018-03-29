@@ -14,14 +14,21 @@ function toArray(value) {
 var dom = {
     /**
      * Create DOM element
-     * @param str
+     * @param str html string or a single tag
      * @returns {Element | Node | null}
      */
     create: function (str) {
-        var template = document.createElement('div');
+        var element;
         str = str.trim();
-        template.innerHTML = str;
-        var element = template.firstChild;
+
+        if (/<.*>/g.test(str)) {
+            var template = document.createElement('div');
+            template.innerHTML = str;
+            element = template.firstChild;
+        } else {
+            element = document.createElement(str);
+        }
+
         if (!this.isValidNode(element))
             throw new Error('Element not valid');
         return element;
